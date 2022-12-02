@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    z-index: 1;
+}
+header div{
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    margin-left:50px ;
+    padding: 0px;
+}
+header .name{
+    margin-left: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 0px;
+    color: #F9F9FF;
+}
+header .nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 50px;
+}
+header .nav ul{
+    list-style: none;
+}
+header .nav ul li{
+    float: left;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+header .nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 247, 247);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box solid #fff;
+    padding: 20px;
+}
+header .nav ul li a:hover{
+    color: #7f97ff;
+}
+.checkbtn {
+    display: none;
+    font-size:30px;
+    color: rgba(0,0,0, 0.9);
+    float: right;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+#check {
+    display: none;
+}
+.home1{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 255, 0.286);
+}
+.home1 .page1{
+    text-align: center;
+    padding: 70px 0;
+}
+.home1 .page1 h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+.home1 .page1 p{
+    font-size: 15px;
+    position: relative;
+    bottom: 25px;
+    color: rgb(54, 52, 52);
+}
+.home1 .ub1{
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.home1 .ub1 div{
+    width: 340px;
+    height: 339px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.home1 ul{
+    background: linear-gradient(40deg, #2436d5 40%, #ff9ac7 100%);
+    width: 340px;
+    height: 375px;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    border-radius: 5%;
+}
+.home1 .ub1 img{
+    width: 340px;
+    height: 340px;
+    cursor: pointer;
+}
+.home1 .ub1 h1{
+    font-size: 20px;
+    color: rgba(0,0,0,0.9);
+    background: wheat;
+    width: 340px;
+    height: 35px;
+    overflow: hidden;
+}
+.home1 ul:hover img{
+    opacity: .3;
+    transition: all .3s ease-in-out;
+}
+.home1 h1:hover text{
+    opacity: .3;
+    transition: all .3s ease-in-out;
+}
+@media (max-width:990px){
+    header{
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        top: 0;
+        background-color: #000000;
+        overflow: hidden;
+        z-index: 1;
+    }
+    header .logo{
+        align-items: center;
+        width: 80px;
+    }
+    header .name{
+        font-size: 70%;
+        padding-top: 10px;
+    }
+    .checkbtn{
+        display: block !important;
+    }
+    header .nav i{
+        color: #fff;
+    }
+    header .nav ul{
+        position: fixed;
+        width: 45%;
+        height: 40vh;
+        background: #000000;
+        top: 64px;
+        left: -200%;
+        transition: all .3s;
+        transform-style: flat;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    header .nav ul li{
+        line-height: 30px;
+        clear: both;
+        margin-top: 15px;
+        text-align: center;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        text-align: center;
+    }
+    header .nav ul li a{
+        font-size: 18px;
+        padding: 0 auto;
+    }
+}
+@media (max-width:990px){
+    header .nav ul{
+        display: block;
+    }
+    section .ub1 div{
+        display: block;
+        text-align: center;
+        width: 100px;
+        padding: 20px;
+    }
+}
